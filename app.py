@@ -7,6 +7,7 @@ import dash_html_components as html
 from dash.dependencies import Output, Input, State
 
 from config import DATA_DIR
+from apps import categories, clusters
 
 # setup default layout
 
@@ -63,6 +64,15 @@ APP_NAME = "ViDA Summary"
 app = dash.Dash(APP_NAME, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = APP_NAME
 app.layout = default_layout
+
+
+@app.callback(Output('page-content', 'children'),
+              Input('url', 'pathname'))
+def display_page(pathname):
+    if pathname == "/" or pathname == "/categories":
+        return categories.layout
+    else:
+        return clusters.layout
 
 
 # callback to open/close the project info modal
