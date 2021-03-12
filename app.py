@@ -64,8 +64,6 @@ app = dash.Dash(APP_NAME, suppress_callback_exceptions=True, external_stylesheet
 app.title = APP_NAME
 app.layout = default_layout
 
-server = app.server
-
 
 # callback to open/close the project info modal
 @app.callback(
@@ -88,3 +86,6 @@ def tab_content(tab):
     with open(os.path.join(DATA_DIR, f"{tab}.md"), "r") as f:
         div = dcc.Markdown(f.read())
     return div
+
+
+server = app.server
