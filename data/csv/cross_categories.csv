@@ -1,0 +1,52 @@
+uids,name,count,cluster0,cluster1,cluster2,cluster3
+['f825c721edb541dbbc8cd210123616c7'],Architecture,604,490,7,66,41
+"['f825c721edb541dbbc8cd210123616c7', 'ed9e048550b2478eb1ab2faaba192832']","Architecture, Animals & Pets",10,2,3,3,2
+"['f825c721edb541dbbc8cd210123616c7', 'e56c5de1e9344241909de76c5886f551']","Architecture, Art & Abstract",33,25,0,3,5
+"['f825c721edb541dbbc8cd210123616c7', '22a2f677efad4d7bbca5ad45f9b5868e']","Architecture, Cars & vehicles",27,21,0,5,1
+"['f825c721edb541dbbc8cd210123616c7', '2d643ff5ed03405b9c34ecdffff9d8d8']","Architecture, Characters & Creatures",26,11,4,7,4
+"['f825c721edb541dbbc8cd210123616c7', '86f23935367b4a1f9647c8a20e03d716']","Architecture, Cultural Heritage & History",296,219,1,4,72
+"['f825c721edb541dbbc8cd210123616c7', 'd7cebaeca8604ebab1480e413404b679']","Architecture, Electronics & Gadgets",65,32,4,18,11
+"['f825c721edb541dbbc8cd210123616c7', '81bfbbfa2c9b4f218eed8609e3cf7aa6']","Architecture, Fashion & Style",1,1,0,0,0
+"['f825c721edb541dbbc8cd210123616c7', 'b3631aefd82b4eeba37aa5fc0b73b05a']","Architecture, Food & Drink",3,1,0,2,0
+"['f825c721edb541dbbc8cd210123616c7', '606f202e5a3c4e62bf9aab1cd9f63e1b']","Architecture, Furniture & Home",96,83,1,6,6
+"['f825c721edb541dbbc8cd210123616c7', '1a99e2b67fc84de0b3ea0d3925208a04']","Architecture, Nature & Plants",22,15,1,3,3
+"['f825c721edb541dbbc8cd210123616c7', '93e6d27da62149c6b963039835f45997']","Architecture, People",5,0,4,0,1
+"['f825c721edb541dbbc8cd210123616c7', 'c51b29706d4e4e93a82e5eea7cbe6f91']","Architecture, Places & Travel",351,279,5,43,24
+"['f825c721edb541dbbc8cd210123616c7', '17d20ca7b35243d4a45171838b50704c']","Architecture, Science & Technology",85,52,2,7,24
+"['f825c721edb541dbbc8cd210123616c7', 'ac8a0065d9e34fca8a3ffa9c6db39bff']","Architecture, Sports & Fitness",7,5,1,1,0
+"['f825c721edb541dbbc8cd210123616c7', '3badf36bd9f549bdba295334d75e04d3']","Architecture, Weapons & Military",8,2,1,2,3
+['2d643ff5ed03405b9c34ecdffff9d8d8'],Characters & Creatures,2963,37,1318,1313,295
+"['2d643ff5ed03405b9c34ecdffff9d8d8', 'ed9e048550b2478eb1ab2faaba192832']","Characters & Creatures, Animals & Pets",535,15,184,238,98
+"['2d643ff5ed03405b9c34ecdffff9d8d8', 'e56c5de1e9344241909de76c5886f551']","Characters & Creatures, Art & Abstract",145,9,44,68,24
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '22a2f677efad4d7bbca5ad45f9b5868e']","Characters & Creatures, Cars & vehicles",45,4,6,31,4
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '86f23935367b4a1f9647c8a20e03d716']","Characters & Creatures, Cultural Heritage & History",101,0,21,4,76
+"['2d643ff5ed03405b9c34ecdffff9d8d8', 'd7cebaeca8604ebab1480e413404b679']","Characters & Creatures, Electronics & Gadgets",84,5,26,39,14
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '81bfbbfa2c9b4f218eed8609e3cf7aa6']","Characters & Creatures, Fashion & Style",37,0,20,10,7
+"['2d643ff5ed03405b9c34ecdffff9d8d8', 'b3631aefd82b4eeba37aa5fc0b73b05a']","Characters & Creatures, Food & Drink",7,0,1,4,2
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '606f202e5a3c4e62bf9aab1cd9f63e1b']","Characters & Creatures, Furniture & Home",9,2,0,5,2
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '357487fbb30a44ee8a0adf9b24829919']","Characters & Creatures, Music",3,0,1,2,0
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '1a99e2b67fc84de0b3ea0d3925208a04']","Characters & Creatures, Nature & Plants",24,0,4,19,1
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '34edc263260f43e693ed527495b6d9a4']","Characters & Creatures, News & Politics",5,0,1,2,2
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '93e6d27da62149c6b963039835f45997']","Characters & Creatures, People",310,2,194,54,60
+"['2d643ff5ed03405b9c34ecdffff9d8d8', 'c51b29706d4e4e93a82e5eea7cbe6f91']","Characters & Creatures, Places & Travel",76,11,14,50,1
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '17d20ca7b35243d4a45171838b50704c']","Characters & Creatures, Science & Technology",121,4,65,14,38
+"['2d643ff5ed03405b9c34ecdffff9d8d8', 'ac8a0065d9e34fca8a3ffa9c6db39bff']","Characters & Creatures, Sports & Fitness",6,0,4,1,1
+"['2d643ff5ed03405b9c34ecdffff9d8d8', '3badf36bd9f549bdba295334d75e04d3']","Characters & Creatures, Weapons & Military",71,4,35,23,9
+['86f23935367b4a1f9647c8a20e03d716'],Cultural Heritage & History,375,55,12,3,305
+"['86f23935367b4a1f9647c8a20e03d716', 'ed9e048550b2478eb1ab2faaba192832']","Cultural Heritage & History, Animals & Pets",35,0,10,2,23
+"['86f23935367b4a1f9647c8a20e03d716', 'e56c5de1e9344241909de76c5886f551']","Cultural Heritage & History, Art & Abstract",61,5,2,4,50
+"['86f23935367b4a1f9647c8a20e03d716', '22a2f677efad4d7bbca5ad45f9b5868e']","Cultural Heritage & History, Cars & vehicles",31,17,5,7,2
+"['86f23935367b4a1f9647c8a20e03d716', 'd7cebaeca8604ebab1480e413404b679']","Cultural Heritage & History, Electronics & Gadgets",42,6,4,6,26
+"['86f23935367b4a1f9647c8a20e03d716', '81bfbbfa2c9b4f218eed8609e3cf7aa6']","Cultural Heritage & History, Fashion & Style",2,0,2,0,0
+"['86f23935367b4a1f9647c8a20e03d716', 'b3631aefd82b4eeba37aa5fc0b73b05a']","Cultural Heritage & History, Food & Drink",2,0,1,1,0
+"['86f23935367b4a1f9647c8a20e03d716', '606f202e5a3c4e62bf9aab1cd9f63e1b']","Cultural Heritage & History, Furniture & Home",8,8,0,0,0
+"['86f23935367b4a1f9647c8a20e03d716', '357487fbb30a44ee8a0adf9b24829919']","Cultural Heritage & History, Music",2,0,1,0,1
+"['86f23935367b4a1f9647c8a20e03d716', '1a99e2b67fc84de0b3ea0d3925208a04']","Cultural Heritage & History, Nature & Plants",13,6,1,1,5
+"['86f23935367b4a1f9647c8a20e03d716', '34edc263260f43e693ed527495b6d9a4']","Cultural Heritage & History, News & Politics",2,1,0,0,1
+"['86f23935367b4a1f9647c8a20e03d716', '93e6d27da62149c6b963039835f45997']","Cultural Heritage & History, People",6,0,1,0,5
+"['86f23935367b4a1f9647c8a20e03d716', 'c51b29706d4e4e93a82e5eea7cbe6f91']","Cultural Heritage & History, Places & Travel",81,56,3,2,20
+"['86f23935367b4a1f9647c8a20e03d716', '17d20ca7b35243d4a45171838b50704c']","Cultural Heritage & History, Science & Technology",109,37,5,4,63
+"['86f23935367b4a1f9647c8a20e03d716', 'ac8a0065d9e34fca8a3ffa9c6db39bff']","Cultural Heritage & History, Sports & Fitness",1,0,0,0,1
+"['86f23935367b4a1f9647c8a20e03d716', '3badf36bd9f549bdba295334d75e04d3']","Cultural Heritage & History, Weapons & Military",17,2,5,5,5
+"['ed9e048550b2478eb1ab2faaba192832', 'e56c5de1e9344241909de76c5886f551']","Animals & Pets, Art & Abstract",1,0,0,0,1
+"['606f202e5a3c4e62bf9aab1cd9f63e1b', '17d20ca7b35243d4a45171838b50704c']","Furniture & Home, Science & Technology",1,0,0,1,0
