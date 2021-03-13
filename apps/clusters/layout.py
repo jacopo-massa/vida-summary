@@ -23,7 +23,7 @@ gen_div = html.Div([
     ], justify='center'),
 
     dbc.Row([
-        dbc.Col(dcc.Graph(id='pie-chart', config=default_config)),
+        dbc.Col(dcc.Graph(id='pie-chart', config=default_config), width=9),
         dbc.Col(card, width=2)
     ], justify='center', style={'padding-top': '20px'}),
 
