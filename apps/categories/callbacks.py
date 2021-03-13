@@ -54,11 +54,11 @@ def update_summary_plot(x_value, y_value, btn_linear, btn_log):
         if comps[0] == 'btn':
             scale = comps[1]
         else:
-            scale = "linear"
-            btn_linear = True  # default option
+            scale = "log"
+            btn_log = True  # default option
     else:
-        scale = "linear"
-        btn_linear = True
+        scale = "log"
+        btn_log = True
 
     fig.update_xaxes(type=scale)
     fig.update_layout(transparent_layout)
