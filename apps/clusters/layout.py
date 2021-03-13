@@ -18,7 +18,7 @@ gen_div = html.Div([
                 dbc.Row(html.H6(dbc.Badge("Categories' Centroids", color='info')), justify='center'),
                 dbc.Row([dbc.Col(c0), dbc.Col(c1)]),
                 dbc.Row([dbc.Col(c2), dbc.Col(c3)], style={'padding-top': '10px', 'padding-bottom': '10px'})
-            ])
+            ]),
         ),
     ], justify='center'),
 

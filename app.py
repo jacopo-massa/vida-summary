@@ -15,7 +15,7 @@ navbar = dbc.NavbarSimple(
     children=[
         dbc.NavItem(dbc.NavLink("Categories & Countables", id='nav-cat-btn', href="categories")),
         dbc.NavItem(dbc.NavLink("Clusters", id='nav-cluster-btn', href="clusters")),
-        dbc.NavItem(dbc.NavLink("Project Info", id='nav-info-btn', href="#", external_link=False)),
+        dbc.NavItem(dbc.NavLink("Project Info", id='nav-info-btn', href="#", external_link=True)),
         dbc.DropdownMenu(children=[
             dbc.DropdownMenuItem("Tools", header=True),
 
@@ -38,7 +38,7 @@ navbar = dbc.NavbarSimple(
 
 # callback to open/close modal is in apps/categories/callbacks.py
 modal = dbc.Modal([
-    dbc.ModalHeader("Dataset Summary Visualization"),
+    dbc.ModalHeader("ViDa Summary"),
     dbc.ModalBody([
         dbc.Card([
             dbc.CardHeader(
@@ -85,4 +85,5 @@ def toggle_modal(n1, n2, is_open):
 def tab_content(tab):
     with open(os.path.join(DATA_DIR, f"{tab}.md"), "r") as f:
         div = dcc.Markdown(f.read())
+
     return div

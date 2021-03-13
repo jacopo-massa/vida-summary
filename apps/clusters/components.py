@@ -1,12 +1,14 @@
 from config import get_image
 from .utils import *
 
+import dash_core_components as dcc
+
 
 def create_card(hdr="", id_hdr="", img=None, id_img=""):
     return dbc.Card(
         [
             dbc.CardHeader(hdr, id=id_hdr, style={'font-weight': 'bold'}),
-            dbc.CardImg(src=img, id=id_img, bottom=True)
+            dcc.Loading(children=[dbc.CardImg(src=img, id=id_img, bottom=True)], type='cube', color='#5bc0de'),
         ], color='info', outline=True)
 
 

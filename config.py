@@ -30,8 +30,9 @@ sub_cat = pd.read_csv(SUBCAT_FILE, index_col=0)
 isomap_df = pd.read_csv(ISOMAP_FILE, index_col=0)
 
 
-# AWS BUCKET settings (for images donwload)
+# AWS BUCKET settings (for images download)
 # Load env variables
+# if hosted on Heroku, need to set up CONFIG VARIABLES
 load_dotenv(os.path.join(ROOT_DIR, ".env"))
 
 BUCKET_NAME = "vidasummary"

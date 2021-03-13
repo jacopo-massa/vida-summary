@@ -14,8 +14,8 @@ nello specifico **6970** modelli descritti da una serie di attributi, tra cui:
 - _\# "Mi Piace"_
 - _\# Visualizzazioni_
 
-Sfruttando questi attributi, sono stati analizzati alcuni 
-aspetti dei modelli, dividendoli fra due pagine web.
+Le analisi sui modelli sono state divise in due pagine web, descritte nelle
+successive sezioni.
 
 ### 1 - Distribuzione delle categorie
 

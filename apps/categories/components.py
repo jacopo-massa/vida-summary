@@ -32,6 +32,7 @@ cat_table = dt.DataTable(
 # CATEGORIES treemap
 sub_cat['all'] = "All"
 cat_treemap = px.treemap(sub_cat, path=['all', 'category', 'subcategory'], values='count', branchvalues='total',
+                         labels={'count': 'Count'}, title='<b>Categories Treemap</b>',
                          color='count', color_continuous_scale=COLOR_SCALE,
                          hover_name=(sub_cat['category'] + ", " + sub_cat['subcategory']))
 cat_treemap.update_traces(hovertemplate="<b>%{parent},%{label}</b> <br><br>Count: <i>%{value}</i>")
@@ -53,5 +54,5 @@ scale_group = create_scale_group()
 card = dbc.Card(
     [
         dbc.CardHeader("", id='summary-card-hdr', style={'font-weight': 'bold'}),
-        dbc.CardImg(id='summary-card-img', bottom=True)
+        dcc.Loading(children=[dbc.CardImg(id='summary-card-img', bottom=True)], type='cube', color='#5bc0de')
     ])

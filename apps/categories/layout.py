@@ -7,17 +7,14 @@ from .components import cat_table, cat_treemap, invert_button, scale_group, x_dr
 default_config = {'displayModeBar': False}
 
 hist_table_div = html.Div([
-    dbc.Row(dbc.Col(html.H4("Categories' Distribution"))),
     dbc.Row([
         dbc.Col(cat_table, width=3),
         dbc.Col(dcc.Graph(id='cat-barchart', config=default_config)),
     ]),
-    dbc.Row(dbc.Col(html.H4("Categories' Treemap"))),
     dbc.Row(dbc.Col(html.Div(dcc.Graph(id='cat-treemap', config=default_config, figure=cat_treemap))))
 ])
 
 summary_div = html.Div([
-    dbc.Row(dbc.Col(html.H4("Countable Attributes"))),
     dbc.Row([
         dbc.Col(invert_button, width=1.5, style={'margin-right': '10px'}),
         dbc.Col(dbc.Badge("X:", color='info'), width=0.1), dbc.Col(x_dropdown, width=2),
@@ -26,7 +23,7 @@ summary_div = html.Div([
     ], justify='center'),
     dbc.Row([
         dbc.Col(dcc.Graph(id='summary-plot', config=default_config), width=9),
-        dbc.Col(card)
+        dbc.Col(card, style={'padding-top': '20px'})
     ])
 ])
 

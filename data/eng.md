@@ -14,8 +14,8 @@ in particular there are **6970** models described by some attributes, including:
 - _\#Likes_
 - _\#Views_
 
-Exploiting these attributes, some aspects of the models have been
-analyzed, dividing them between two web pages.
+Model analyzes were divided into two web pages, described in
+subsequent sections.
 
 ### 1 - Categories Distribution
 

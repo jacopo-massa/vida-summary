@@ -19,8 +19,8 @@ def update_barchart(sort_by):
     else:
         df = cat
 
-    fig = px.bar(df, labels={'name': 'Name', 'count': 'Count'}, x='name', y='count', color='count',
-                 color_continuous_scale=COLOR_SCALE)
+    fig = px.bar(df, labels={'name': 'Name', 'count': 'Count'}, x='name', y='count',
+                 title="<b>Categories Distribution</b>", color='count', color_continuous_scale=COLOR_SCALE)
     fig.update_yaxes(visible=False, showticklabels=False)
     fig.update_layout(xaxis_title="")
     fig.update_layout(transparent_layout)
@@ -45,6 +45,7 @@ def update_summary_plot(x_value, y_value, btn_linear, btn_log):
 
     fig = px.scatter(data, x=x_value, y=y_value, labels={x_value: x_lbl, y_value: y_lbl}, hover_data=[x_value, y_value],
                      hover_name=data['name'].str.title(), custom_data=[data.index],
+                     title="<b>Numerical Attributes' Correlation</b>",
                      color=y_value, color_continuous_scale=COLOR_SCALE)
 
     ctx = dash.callback_context
