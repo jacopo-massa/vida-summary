@@ -58,12 +58,4 @@ def get_image(img_name, grid=False):
 
 
 if __name__ == '__main__':
-    CLUSTERS_ALL = ["Architecture (only)", "Architecture",
-                    "Ch. & Cr. (1) (only)", "Ch. & Cr. (1)",
-                    "Ch. & Cr. (2) (only)", "Ch. & Cr. (2)",
-                    "Cultural Heritage & History (only)", "Cultural Heritage & History"]
-
-    colors = {k: f"{CLUSTERS_ALL[k]}({k}) - (<b>{len(isomap_df.loc[isomap_df['colors'] == k])}</b>)" for k in
-              range(len(CLUSTERS_ALL))}
-
-    print(colors)
+    pass
