@@ -7,9 +7,14 @@ from dotenv import load_dotenv
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT_DIR, "data")
-IMG_DIR = os.path.join(DATA_DIR, "img")
 CSV_DIR = os.path.join(DATA_DIR, "csv")
+
+IMG_DIR = os.path.join(DATA_DIR, "img")
+if not os.path.exists(IMG_DIR):
+    os.mkdir(IMG_DIR)
 GRID_DIR = os.path.join(IMG_DIR, "grid")
+if not os.path.exists(GRID_DIR):
+    os.mkdir(GRID_DIR)
 
 DATASET_FILE = os.path.join(CSV_DIR, "dataset.csv")
 CATEGORIES_FILE = os.path.join(CSV_DIR, "categories.csv")
