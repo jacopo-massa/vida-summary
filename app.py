@@ -38,7 +38,7 @@ navbar = dbc.NavbarSimple(
 
 # callback to open/close modal is in apps/categories/callbacks.py
 modal = dbc.Modal([
-    dbc.ModalHeader("ViDa Summary"),
+    dbc.ModalHeader("ViDA Summary"),
     dbc.ModalBody([
         dbc.Card([
             dbc.CardHeader(

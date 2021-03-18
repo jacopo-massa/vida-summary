@@ -18,9 +18,6 @@ SUBCAT_FILE = os.path.join(CSV_DIR, "sub_categories.csv")
 DATACAT_FILE = os.path.join(CSV_DIR, "data_cat.csv")
 ISOMAP_FILE = os.path.join(CSV_DIR, "isomap.csv")
 
-# pandas options setting
-pd.set_option('display.max_rows', None)
-
 # build pandas dataframes from csv files
 cat = pd.read_csv(CATEGORIES_FILE, index_col=0)
 data = pd.read_csv(DATASET_FILE, index_col=0)
@@ -32,7 +29,7 @@ isomap_df = pd.read_csv(ISOMAP_FILE, index_col=0)
 
 # AWS BUCKET settings (for images download)
 # Load env variables
-# if hosted on Heroku, need to set up CONFIG VARIABLES
+# if hosted on Heroku, need to set up CONFIG VARIABLES !!!
 load_dotenv(os.path.join(ROOT_DIR, ".env"))
 
 BUCKET_NAME = "vidasummary"
@@ -49,7 +46,7 @@ def get_image_path(img_name, grid=False):
     path = os.path.join(which, img_name + ".png")
 
     if not os.path.exists(path):
-        aws_path = BUCKET_DIR + img_name + ".png"
+        aws_path = BUCKET_DIR + ("grid/" if grid else "") + img_name + ".png"
         s3.download_file(BUCKET_NAME, aws_path, path)
 
     return path
@@ -58,3 +55,15 @@ def get_image_path(img_name, grid=False):
 def get_image(img_name, grid=False):
     path = get_image_path(img_name, grid)
     return Image.open(path)
+
+
+if __name__ == '__main__':
+    CLUSTERS_ALL = ["Architecture (only)", "Architecture",
+                    "Ch. & Cr. (1) (only)", "Ch. & Cr. (1)",
+                    "Ch. & Cr. (2) (only)", "Ch. & Cr. (2)",
+                    "Cultural Heritage & History (only)", "Cultural Heritage & History"]
+
+    colors = {k: f"{CLUSTERS_ALL[k]}({k}) - (<b>{len(isomap_df.loc[isomap_df['colors'] == k])}</b>)" for k in
+              range(len(CLUSTERS_ALL))}
+
+    print(colors)

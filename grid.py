@@ -6,7 +6,7 @@ import numpy as np
 from config import *
 
 
-def make_image_grid(images, d, img_dim=32, n=None, name='grid.png'):
+def make_image_grid(images, d, img_dim=64, n=None, name='grid.png'):
     ilen = len(images)
     if n is None:
         n = ilen
@@ -34,7 +34,6 @@ def make_image_grid(images, d, img_dim=32, n=None, name='grid.png'):
 
 
 def set_grid(tot=True, vl=False, cluster=0, n=400):
-    img_dim = 32
 
     if vl:
         df = isomap_df.loc[isomap_df['cluster'] == cluster, ['views', 'likes']]
@@ -43,7 +42,6 @@ def set_grid(tot=True, vl=False, cluster=0, n=400):
 
     if not tot:
         df = df.sample(n=n)
-        img_dim = 64
 
     df_dict = df.to_dict(orient='split')
     d = np.array(df_dict['data'], dtype=float)
@@ -58,10 +56,11 @@ def set_grid(tot=True, vl=False, cluster=0, n=400):
     filenames = np.array(df_dict['index'])
     filenames = filenames[ind]
 
-    img_name = "grid{}-{}-{}.png".format(cluster, ("tot" if tot else "n"), ("vl" if vl else "ft"))
+    img_name = "grid{}-{}-{}.png".format(cluster, ("all" if tot else "sample"), ("vl" if vl else "ft"))
 
-    make_image_grid(filenames, d, img_dim=img_dim, name=img_name)
+    make_image_grid(filenames, d, name=img_name)
 
 
 if __name__ == '__main__':
-    set_grid(tot=True, vl=False, cluster=0)
+
+    set_grid(tot=True, vl=True, cluster=0)

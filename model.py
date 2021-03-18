@@ -1,3 +1,6 @@
+# Module that contains the pretrained ResNet50, used to extract model's features
+
+import numpy as np
 import torch
 import torch.nn as nn
 import torchvision.models as models
@@ -53,3 +56,16 @@ class VidaResNet(nn.Module):
             out = self.resnet(stim)
 
         return out
+
+
+# main for testing
+if __name__ == '__main__':
+    filename = sys.argv[1]
+    model = VidaResNet().cuda()
+    x = model.predict(filename)
+
+    x = x.cpu().numpy()
+    x = np.reshape(x, (x.size, 1))
+    name_out = os.path.splitext(filename)[0]
+
+    np.savetxt(name_out + '.txt', x)

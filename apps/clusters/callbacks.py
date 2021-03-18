@@ -38,13 +38,9 @@ def update_btn_group_gen(btn_cluster, btn_view, btn_like):
     Output('btn-group-grid', 'children'),
     Input('btn-all', 'n_clicks'),
     Input('btn-sample', 'n_clicks'),
-    Input('gen-scatter', 'clickData')
+    Input('cl-menu', 'value')
 )
-def update_btn_group_grid(btn_all, btn_sample, click_gen):
-    if click_gen:
-        cluster = int(click_gen['points'][0]['customdata'][0])
-    else:
-        cluster = 0
+def update_btn_group_grid(btn_all, btn_sample, cluster):
 
     ctx = dash.callback_context
     if ctx.triggered:
@@ -52,11 +48,11 @@ def update_btn_group_grid(btn_all, btn_sample, click_gen):
         if comps[0] == 'btn':
             show = comps[1]
         else:
-            show = "all"
-            btn_all = True  # default option
+            show = "sample"
+            btn_sample = True  # default option
     else:
-        show = "all"
-        btn_all = True
+        show = "sample"
+        btn_sample = True
 
     ft_img = get_image(f"grid{cluster}-{show}-ft", grid=True)
     vl_img = get_image(f"grid{cluster}-{show}-vl", grid=True)
@@ -87,14 +83,9 @@ def update_cluster_card(gen_cluster):
 
 @app.callback(
     Output('pie-chart', 'figure'),
-    Input('gen-scatter', 'clickData')
+    Input('cl-menu', 'value')
 )
-def update_pie_chart(click_gen):
-    if click_gen:
-        cluster = int(click_gen['points'][0]['customdata'][0])
-    else:
-        cluster = 0
-
+def update_pie_chart(cluster):
     pie = create_pie_chart(cluster)
 
     return pie

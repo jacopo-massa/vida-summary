@@ -29,6 +29,10 @@ c3 = create_card(hdr="Cult. & Hist.", img=get_image(uid3))
 ft_card = create_card(hdr=FT_HDR, id_hdr='ft-grid-hdr', id_img='ft-grid-img', img='no_image')
 vl_card = create_card(hdr=VL_HDR, id_hdr='vl-grid-hdr', id_img='vl-grid-img', img='no_image')
 
+# DRODPWN MENU FOR CLUSTER CHOICE
+cl_dropdown = dcc.Dropdown(id='cl-menu', value=0, clearable=False,
+                           options=[{'label': c.title(), 'value': idx} for idx, c in enumerate(CLUSTERS)])
+
 # BUTTON GROUP to change grid cards
 grid_group = create_btn_grid()
 
@@ -39,4 +43,4 @@ color_group = create_btn_gen_scatter()
 isomap_df.sort_values(by=['cluster'], inplace=True)
 
 # change cluster to string to have punctual legend
-isomap_df['cluster'] = isomap_df['cluster'].astype(str)
+# isomap_df['cluster'] = isomap_df['cluster'].astype(str)

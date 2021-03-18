@@ -2,7 +2,7 @@ import dash_bootstrap_components as dbc
 import dash_core_components as dcc
 import dash_html_components as html
 
-from .components import color_group, grid_group, ft_card, vl_card, card, c0, c1, c2, c3
+from .components import color_group, grid_group, ft_card, vl_card, card, c0, c1, c2, c3, cl_dropdown
 
 default_config = {'displayModeBar': False}
 
@@ -21,6 +21,9 @@ gen_div = html.Div([
             ]),
         ),
     ], justify='center'),
+
+    dbc.Row([dbc.Col(html.H6(dbc.Badge("Cluster:", color='info')), width=0.5), dbc.Col([cl_dropdown], width=3)],
+            style={'padding-left': '10px'}),
 
     dbc.Row([
         dbc.Col(dcc.Graph(id='pie-chart', config=default_config), width=9),
