@@ -26,7 +26,7 @@ navbar = dbc.NavbarSimple(
 
             dbc.DropdownMenuItem("Code References", header=True),
 
-            dbc.DropdownMenuItem("GitHub", href="https://github.com/jacopo-massa/sldv-project",
+            dbc.DropdownMenuItem("GitHub", href="https://github.com/jacopo-massa/vida-summary",
                                  external_link=True, target="_blank"),
             dbc.DropdownMenuItem("ViDA 3D", href="http://vcg.isti.cnr.it/Publications/2020/AFBCPCG20/",
                                  external_link=True, target="_blank")
