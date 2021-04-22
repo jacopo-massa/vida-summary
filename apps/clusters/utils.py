@@ -8,10 +8,10 @@ DISCRETE_SCALE = px.colors.cyclical.HSV
 CLUSTERS = ["Architecture", "Characters & Creatures (1)",
             "Characters & Creatures (2)", "Cultural Heritage & History"]
 
-CLUSTERS_ALL = ["Architecture (only)", "Architecture",
-                "Characters & Creatures (1) (only)", "Characters & Creatures (1)",
-                "Characters & Creatures (2) (only)", "Characters & Creatures (2)",
-                "Cultural Heritage & History (only)", "Cultural Heritage & History"]
+CLUSTERS_ALL = ["Architecture", "Architecture (other classes)",
+                "Characters & Creatures (1)", "Characters & Creatures (1) (other classes)",
+                "Characters & Creatures (2)", "Characters & Creatures (2) (other classes)",
+                "Cultural Heritage & History", "Cultural Heritage & History (other classes)"]
 
 FT_HDR = "Features' Embedding"
 VL_HDR = "Views/Likes' Embedding"

@@ -1,6 +1,6 @@
 import os
 
-import boto3
+import dropbox
 import pandas as pd
 from PIL import Image
 from dotenv import load_dotenv
@@ -32,14 +32,13 @@ sub_cat = pd.read_csv(SUBCAT_FILE, index_col=0)
 isomap_df = pd.read_csv(ISOMAP_FILE, index_col=0)
 
 
-# AWS BUCKET settings (for images download)
 # Load env variables
 # if hosted on Heroku, need to set up CONFIG VARIABLES !!!
 load_dotenv(os.path.join(ROOT_DIR, ".env"))
 
-BUCKET_NAME = "vidasummary"
-BUCKET_DIR = "img/"
-s3 = boto3.client("s3")
+# DROPBOX settings
+DB_DIR = "img/"
+dbx = dropbox.Dropbox(os.environ['DROPBOX_ACCESS_TOKEN'])
 
 
 def zoomable(zoom_x=True, zoom_y=True):
@@ -51,8 +50,10 @@ def get_image_path(img_name, grid=False):
     path = os.path.join(which, img_name + ".png")
 
     if not os.path.exists(path):
-        aws_path = BUCKET_DIR + ("grid/" if grid else "") + img_name + ".png"
-        s3.download_file(BUCKET_NAME, aws_path, path)
+        dbx_path = DB_DIR + ("grid/" if grid else "") + img_name + ".png"
+        with open(path, "wb") as f:
+            _, res = dbx.files_download(path=dbx_path)
+            f.write(res.content)
 
     return path
 
