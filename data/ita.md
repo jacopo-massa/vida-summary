@@ -1,5 +1,5 @@
 Il progetto **ViDA Summary** è stato realizzato da
-[Jacopo Massa](https://jacopo-massa.github.io/) 
+[Jacopo Massa](https://jacopomassa.netlify.app/it/) 
 nell'ambito del corso di _Scientific & Large Data Visualization_ 
 dell'_Università di Pisa_, sotto la supervisione dei docenti
 [Daniela Giorgi](http://vcg.isti.cnr.it/~giorgi/) e 
@@ -7,7 +7,7 @@ dell'_Università di Pisa_, sotto la supervisione dei docenti
 
 I modelli analizzati sono un sottoinsieme del dataset 
 [ViDA 3D](http://vcg.isti.cnr.it/Publications/2020/AFBCPCG20/), 
-nello specifico **6970** modelli descritti da una serie di attributi, tra cui:
+nello specifico [**6970** modelli](https://www.dropbox.com/sh/bazjfdx7d40oy2j/AAD7RGjB-Nw4YRPTbE4Dku6ca?dl=0) descritti da una serie di attributi, tra cui:
 
 - _Nome_
 - _Categoria/e_

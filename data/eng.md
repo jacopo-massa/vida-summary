@@ -1,5 +1,5 @@
 **ViDA Summary** project has been carried out by 
-[Jacopo Massa](https://jacopo-massa.github.io/) 
+[Jacopo Massa](https://jacopomassa.netlify.app) 
 as part of the _Scientific & Large Data Visualization_ 
 course at the _University of Pisa_, under the supervision of teachers
 [Daniela Giorgi](http://vcg.isti.cnr.it/~giorgi/) and
@@ -7,7 +7,7 @@ course at the _University of Pisa_, under the supervision of teachers
 
 Analyzed models are a subset of the
 [ViDA 3D](http://vcg.isti.cnr.it/Publications/2020/AFBCPCG20/) dataset, 
-in particular there are **6970** models described by some attributes, including:
+in particular there are [**6970** models](https://www.dropbox.com/sh/bazjfdx7d40oy2j/AAD7RGjB-Nw4YRPTbE4Dku6ca?dl=0) described by some attributes, including:
 
 - _Name_
 - _Categories_
@@ -50,7 +50,7 @@ to the "reduced" data. Clustering has confirmed what was observed
 in the first part, that is, that models can be grouped 
 in the 3 most present macro-categories.
 
-Finally, models were placed in a variabile size grid 
+Finally, models were placed in a variable size grid 
 (based on each cluster's cardinality).
 This representation provided a summarized view of the analyzed subset.
 
