@@ -52,7 +52,6 @@ def get_image_path(img_name, grid=False):
 
     if not os.path.exists(path):
         dbx_path = DB_DIR + ("grid/" if grid else "") + img_name + ".png"
-        print(dbx_path)
 
         try:
             _, image = dbx.files_download(path=dbx_path)
