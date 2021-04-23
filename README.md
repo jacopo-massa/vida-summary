@@ -1,3 +1,5 @@
+# ViDA Summary
+
 **ViDA Summary** has been carried out by 
 [Jacopo Massa](https://jacopomassa.netlify.app) 
 as part of the _Scientific & Large Data Visualization_ 
@@ -26,8 +28,13 @@ in favor of only 3 categories:
 - _Architecture_
 - _Cultural Heritage & History_
 
+![Bar Chart](https://github.com/jacopo-massa/vida-summary/blob/main/data/static/barchart.png)
+![Treemap](https://github.com/jacopo-massa/vida-summary/blob/main/data/static/treemap.png)
+
 With the **scatter plot**, correlation between any couple of 
 models' numerical attributes can be observed.
+
+![Scatter plot](https://github.com/jacopo-massa/vida-summary/blob/main/data/static/scatterplot.png)
 
 ### 2 - Feature Analysis
 
@@ -48,11 +55,15 @@ A first representation was obtained by applying a _clustering algorithm_
 ([K-Means](https://it.wikipedia.org/wiki/K-means))
 to the "reduced" data. Clustering has confirmed what was observed
 in the first part, that is, that models can be grouped 
-in the 3 most present macro-categories.
+in the 3 most common macro-categories.
+
+![Scatter plot Clusters](https://github.com/jacopo-massa/vida-summary/blob/main/data/static/scatterplot2.png)
 
 Finally, models were placed in a variable size grid 
 (based on each cluster's cardinality).
 This representation provided a summarized view of the analyzed subset.
+
+![Grid](https://github.com/jacopo-massa/vida-summary/blob/main/data/static/grid.png)
 
 ### External libraries
 
