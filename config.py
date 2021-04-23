@@ -1,3 +1,4 @@
+import glob
 import os
 
 import dropbox
@@ -37,8 +38,8 @@ isomap_df = pd.read_csv(ISOMAP_FILE, index_col=0)
 load_dotenv(os.path.join(ROOT_DIR, ".env"))
 
 # DROPBOX settings
-DB_DIR = "img/"
-dbx = dropbox.Dropbox(os.environ['DROPBOX_ACCESS_TOKEN'])
+DB_DIR = "/img/"
+dbx = dropbox.Dropbox(os.getenv('DROPBOX_ACCESS_TOKEN'))
 
 
 def zoomable(zoom_x=True, zoom_y=True):
@@ -51,9 +52,15 @@ def get_image_path(img_name, grid=False):
 
     if not os.path.exists(path):
         dbx_path = DB_DIR + ("grid/" if grid else "") + img_name + ".png"
-        with open(path, "wb") as f:
-            _, res = dbx.files_download(path=dbx_path)
-            f.write(res.content)
+        print(dbx_path)
+
+        try:
+            _, image = dbx.files_download(path=dbx_path)
+        except FileNotFoundError:
+            return None
+
+        with open(path, "wb") as im:
+            im.write(image.content)
 
     return path
 
