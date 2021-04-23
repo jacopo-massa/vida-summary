@@ -41,19 +41,17 @@ def create_gen_scatter(c='cluster'):
         colors = {k: f"{CLUSTERS_ALL[k]} - (<b>{len(isomap_df.loc[isomap_df['colors'] == k])}</b>)"
                   for k in range(len(CLUSTERS_ALL))}
 
-        df = isomap_df.sort_values(by=['colors'])
-        cols = df['colors'].map(colors)
+        cols = isomap_df.sort_values(by=['colors'])['colors'].map(colors)
         size = None
     else:
         column_name = c + "Count"
         cols = data[column_name]
         size = cols
-        df = isomap_df
 
     # categories = data_cat['names'].apply(lambda x: x[2:-2].replace("'", ""))
-    categories = [data_cat.loc[idx, 'names'][2:-2].replace("'", "") for idx in df.index]
+    categories = [data_cat.loc[idx, 'names'][2:-2].replace("'", "") for idx in isomap_df.index]
 
-    fig = px.scatter(df, x='comp1', y='comp2', labels={'color': (c.title() + "s")},
+    fig = px.scatter(isomap_df, x='comp1', y='comp2', labels={'color': (c.title() + "s")},
                      custom_data=['cluster', isomap_df.index, categories], title="Models' Clustering",
                      hover_name="name", color=cols, size=size, color_continuous_scale=CONTINUOUS_SCALE,
                      color_discrete_sequence=DISCRETE_SCALE)
