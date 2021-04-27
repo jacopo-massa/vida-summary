@@ -1,5 +1,9 @@
 # ViDA Summary
 
+### [Link](https://vidasummary.herokuapp.com) to the web app
+
+<hr>
+
 **ViDA Summary** has been carried out by 
 [Jacopo Massa](https://jacopomassa.netlify.app) 
 as part of the _Scientific & Large Data Visualization_ 
@@ -19,6 +23,8 @@ in particular there are [**6970** models](https://www.dropbox.com/sh/bazjfdx7d40
 Model analyzes were divided into two web pages, described in
 subsequent sections.
 
+<hr>
+
 ### 1 - Categories Distribution
 
 **Bar Chart** and **Treemap** show a subsantial imbalance 
@@ -35,6 +41,8 @@ With the **scatter plot**, correlation between any couple of
 models' numerical attributes can be observed.
 
 ![Scatter plot](https://github.com/jacopo-massa/vida-summary/blob/main/data/static/scatterplot.png)
+
+<hr>
 
 ### 2 - Feature Analysis
 
@@ -64,6 +72,8 @@ Finally, models were placed in a variable size grid
 This representation provided a summarized view of the analyzed subset.
 
 ![Grid](https://github.com/jacopo-massa/vida-summary/blob/main/data/static/grid.png)
+
+<hr>
 
 ### External libraries
 
