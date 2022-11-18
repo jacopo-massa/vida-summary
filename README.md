@@ -1,6 +1,6 @@
 # ViDA Summary
 
-### [Link](https://vidasummary.herokuapp.com) to the web app
+### [Link](https://vida-summary.onrender.com) to the web app
 
 <hr>
 

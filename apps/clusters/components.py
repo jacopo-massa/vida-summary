@@ -1,7 +1,7 @@
 from config import get_image
 from .utils import *
 
-import dash_core_components as dcc
+from dash import dcc
 
 
 def create_card(hdr="", id_hdr="", img=None, id_img=""):

@@ -1,11 +1,8 @@
 import os
 
-import dash
+from dash import dcc, html, Dash
 import dash_bootstrap_components as dbc
-import dash_core_components as dcc
-import dash_html_components as html
 from dash.dependencies import Output, Input, State
-
 from config import DATA_DIR
 
 # setup default layout
@@ -45,7 +42,7 @@ modal = dbc.Modal([
                 dbc.Tabs([
                     dbc.Tab(label="Italian 🇮🇹", tab_id='ita'),
                     dbc.Tab(label="English 🇬🇧", tab_id='eng'),
-                ], id="card-tabs", card=True, active_tab='ita')
+                ], id="card-tabs", active_tab='ita')
             ),
             dbc.CardBody(id="card-content"),
         ], color='info', outline=True)
@@ -60,7 +57,7 @@ default_layout = html.Div([dcc.Location(id="url", refresh=True), navbar,
 # create app
 APP_NAME = "ViDA Summary"
 
-app = dash.Dash(APP_NAME, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(APP_NAME, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = APP_NAME
 app.layout = default_layout
 

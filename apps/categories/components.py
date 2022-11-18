@@ -1,5 +1,5 @@
-import dash_core_components as dcc
-import dash_table as dt
+from dash import dash_table as dt
+from dash import dcc
 import plotly.express as px
 
 from config import cat, sub_cat
