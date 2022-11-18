@@ -2,6 +2,7 @@ plotly
 dash
 dash-bootstrap-components
 dropbox
+gunicorn
 numpy
 pandas
 python-dotenv
