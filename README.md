@@ -1,6 +1,8 @@
 # ViDA Summary
 
-### [Link](https://vida-summary.onrender.com) to the web app
+### [Link](https://vida-summary.onrender.com) to the web app.
+
+_Please note that it may take a few minutes for the web app to start up, in case it has not been run recently. That's because the web service is hosted through a free tier that puts idle services on standby._
 
 <hr>
 
