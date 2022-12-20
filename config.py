@@ -1,9 +1,8 @@
 import os
 
-import dropbox
+from db_config import dbx, DB_DIR
 import pandas as pd
 from PIL import Image
-from dotenv import load_dotenv
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT_DIR, "data")
@@ -30,15 +29,6 @@ data_cat = pd.read_csv(DATACAT_FILE, index_col=0)
 cross_cat = pd.read_csv(CROSSCAT_FILE, index_col=0)
 sub_cat = pd.read_csv(SUBCAT_FILE, index_col=0)
 isomap_df = pd.read_csv(ISOMAP_FILE, index_col=0)
-
-
-# Load env variables
-# if hosted on Heroku, need to set up CONFIG VARIABLES !!!
-load_dotenv(os.path.join(ROOT_DIR, ".env"))
-
-# DROPBOX settings
-DB_DIR = "/img/"
-dbx = dropbox.Dropbox(os.getenv('DROPBOX_ACCESS_TOKEN'))
 
 
 def zoomable(zoom_x=True, zoom_y=True):
